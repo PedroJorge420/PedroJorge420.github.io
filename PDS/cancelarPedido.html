@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cancelar pedido</title>
+</head>
+<body>
+<h1>Fazer pedido - versão 1</h1>
+<h2>Atores</h2>
+Cliente<br>
+<h2>Pré-condição</h2>
+O cliente ser cadastrado no site<br>
+O cliente deve ter feito pedido
+<h2>Fluxo de eventos(caminho básico):</h2>
+	<ol>
+		<li>O caso de uso começa quando o cliente clica em "Meus pedidos"</li>
+		<li>O cliente seleciona o pedido que deseja excluir</li>
+		<li>O sistema verifica se o pedido de cancelamento foi feito em um prazo de 3 dias desde o pedido</li>
+		<li>Se estiver dentro do prazo, o pedido é cancelado</li>
+	</ol>
+<ol>
+<h2>Fluxo de eventos(caminho secundário)</h2>
+Se o pedido de cancelamento for feito após 3 dias do pedido, o pedido não poderá mais ser cancelado.
+</ol>
+<h2>Pós-condição(caminho básico)</h2>
+O pedido é cancelado
+<h2>Pós-condição(caminho secundário)</h2>
+O pedido não é alterado
+</body>
+</html>
